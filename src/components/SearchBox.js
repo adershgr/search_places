@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import "../css/MySearchBox.css";
+import "../css/SearchBox.css";
 
-function MySearchBox({ onSearch }) {
+function SearchBox({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState("");
   const searchInputRef = useRef(null);
-
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -32,14 +31,14 @@ function MySearchBox({ onSearch }) {
       <input
         className="search-input"
         type="text"
-        placeholder="Search places"
+        placeholder="Search cities"
         value={searchQuery}
         onChange={handleInputChange}
         onKeyDown={handleSearchKeyDown}
         ref={searchInputRef}
       />
     </div>
-  );
+    );
 }
 
-export default MySearchBox;
+export default SearchBox;

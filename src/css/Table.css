@@ -1,0 +1,43 @@
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.custom-table thead th {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 300px) {
+  .table-container {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .custom-table {
+    border: none;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    padding: 8px;
+    border: none;
+  }
+
+  .custom-table thead th {
+    display: none;
+  }
+}
